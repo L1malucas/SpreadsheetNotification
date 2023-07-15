@@ -22,7 +22,7 @@ class MainApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true,
         primarySwatch: Colors.indigo,
-        brightness: Brightness.dark,
+        // brightness: Brightness.,
       ),
       home: const LoginPage(),
     );

@@ -1,9 +1,11 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:spreadsheet_notifications/pages/teste_page.dart';
 import 'package:spreadsheet_notifications/services/sign_in_request.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class LoginPage extends StatefulWidget {
-  const LoginPage({super.key});
+  const LoginPage({Key? key}) : super(key: key);
 
   @override
   State<LoginPage> createState() => _LoginPageState();
@@ -24,9 +26,11 @@ class _LoginPageState extends State<LoginPage> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               InkWell(
-                onTap: () {
-                  SignInRequest().signInGoogle();
-                  print('object');
+                onTap: () async {
+                  bool success = await SignInRequest().signInGoogle();
+                  if (success) {
+                    navigateToTestePage();
+                  }
                 },
                 child: SizedBox(
                   width: 150,
@@ -77,6 +81,15 @@ class _LoginPageState extends State<LoginPage> {
             ),
           )
         ],
+      ),
+    );
+  }
+
+  void navigateToTestePage() {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => const TestePage(),
       ),
     );
   }
