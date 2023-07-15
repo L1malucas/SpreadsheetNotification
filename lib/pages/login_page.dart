@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:spreadsheet_notifications/services/sign_in_request.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class LoginPage extends StatefulWidget {
@@ -24,6 +25,7 @@ class _LoginPageState extends State<LoginPage> {
             children: [
               InkWell(
                 onTap: () {
+                  SignInRequest().signInGoogle();
                   print('object');
                 },
                 child: SizedBox(

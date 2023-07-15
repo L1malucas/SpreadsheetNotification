@@ -13,6 +13,7 @@ dependencies:
   google_sign_in: ^6.1.4
   googleapis: ^11.3.0
   firebase_auth: ^4.7.0
+  firebase_core: ^2.15.0
 
 dev_dependencies:
   flutter_test:
