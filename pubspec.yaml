@@ -10,6 +10,9 @@ dependencies:
   flutter:
     sdk: flutter
   url_launcher: ^6.1.11
+  google_sign_in: ^6.1.4
+  googleapis: ^11.3.0
+  firebase_auth: ^4.7.0
 
 dev_dependencies:
   flutter_test:
