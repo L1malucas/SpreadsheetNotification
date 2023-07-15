@@ -1,9 +1,9 @@
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:spreadsheet_notifications/pages/teste_page.dart';
-import 'package:spreadsheet_notifications/services/sign_in_request.dart';
+import 'package:spreadsheet_notifications/services/user_requests.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+//TROCAR TODAS IMAGENS PARA ICONES
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
 

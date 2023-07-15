@@ -76,6 +76,12 @@ downloads necessarios
    - node
    - 
 1. baixar as dependencias
+   1.   url_launcher: ^6.1.11
+   2.   google_sign_in: ^6.1.4
+   3.   googleapis: ^11.3.0
+   4.   firebase_auth: ^4.7.0
+   5.   firebase_core: ^2.15.0
+   6.   cloud_firestore: ^4.8.3
 2. Configure um projeto no firebase
 3. importar dependencias como 
 	import 'package:googleapis/drive/v3.dart' as drive;
