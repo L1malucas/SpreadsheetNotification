@@ -67,3 +67,25 @@ Este projeto é licenciado sob a [MIT License](LICENSE). Sinta-se à vontade par
 ## Agradecimentos
 
 Agradecemos a todos os desenvolvedores que contribuíram para as bibliotecas e recursos de código aberto utilizados neste projeto. Seu trabalho é fundamental para o sucesso deste projeto.
+
+google drive api e google auth com flutter
+downloads necessarios
+   - firebase_cli
+   - keytools 
+   - java
+   - node
+   - 
+1. baixar as dependencias
+2. Configure um projeto no firebase
+3. importar dependencias como 
+	import 'package:googleapis/drive/v3.dart' as drive;
+	import 'package:google_sign_in/google_sign_in.dart' as signIn;
+4. chamada de função para login com google
+	Future<void> _incrementCounter() async {
+      final googleSignIn = signIn.GoogleSignIn.standard(scopes: [drive.DriveApi.DriveScope]);
+      final signIn.GoogleSignInAccount account = await googleSignIn.signIn();
+      print("User account $account");
+   }  
+   flutter fire erro Even after adding C:\Users\PC\AppData\Local\Pub\Cache\bin to the path for me flutterfire would not work from the command line, the reason being that it actually instally a flutterfire.bat file.
+
+So I use flutterfire.bat in the command line as of now and that is working.
